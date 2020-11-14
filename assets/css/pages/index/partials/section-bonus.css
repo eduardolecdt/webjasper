@@ -1,0 +1,118 @@
+/*
+
+INDEX partials SECTION BONUS
+
+*/
+
+section.bonus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Titulo */
+
+section.bonus .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: var(--cor-primaria-1);
+  padding: 0px 30px;
+  min-height: 200px;
+}
+
+section.bonus .titulo h2 {
+  font-family: var(--fonte-black);
+  font-size: 2rem;
+  color: var(--cor-branco);
+  padding-bottom: 10px;
+}
+
+section.bonus .titulo p {
+  font-family: var(--fonte-medium);
+  font-size: 1.1rem;
+  color: var(--cor-secundaria-1);
+}
+
+/* Titulo */
+
+section.bonus .itens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 50px;
+}
+
+section.bonus .itens .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+  padding: 100px 15px 100px 15px;
+}
+
+section.bonus .itens .item p {
+  font-family: var(--fonte-medium);
+  font-size: 0.8rem;
+  color: var(--cor-branco);
+  line-height: 1.4;
+  width: 100%;
+  max-width: 190px;
+}
+
+section.bonus .itens .item img.seta {
+  width: 100%;
+  max-width: 50px;
+  position: absolute;
+  top: 0;
+}
+
+section.bonus .itens .item img.numero {
+  width: 100%;
+  max-width: 50px;
+  border: 3px solid var(--cor-primaria-1);
+  padding: 15px 0px;
+  border-radius: 10px 0px 10px 0px;
+  margin-bottom: 20px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.bonus .itens {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px;
+    overflow-x: scroll;
+  }
+  section.bonus .itens .item {
+    min-width: 250px;
+    padding: 100px 25px 100px 25px;
+  }
+  section.bonus .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: var(--cor-primaria-1);
+    padding: 0px 30px;
+    min-height: 200px;
+  }
+  section.bonus .titulo h2 {
+    font-size: 1.4rem;
+  }
+  section.bonus .titulo p {
+    font-size: 1rem;
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,24 @@
+/*
+
+INDEX
+
+*/
+
+@import '../../global/global.css';
+
+/* Partials */
+
+@import './partials/body.css';
+@import './partials/nav.css';
+@import './partials/loading.css';
+@import './partials/footer.css';
+
+@import './partials/header.css';
+@import './partials/section-conteudo.css';
+@import './partials/section-crise.css';
+@import './partials/section-experiencia.css';
+@import './partials/section-bonus.css';
+@import './partials/section-avatar.css';
+@import './partials/section-precos.css';
+@import './partials/section-perguntas.css';
+

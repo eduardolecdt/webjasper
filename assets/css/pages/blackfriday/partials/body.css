@@ -1,0 +1,17 @@
+/*
+
+BLACKFRIDAY partials BODY
+
+*/
+
+body {
+  background-color: var(--cor-preto);
+  background-image: url('../../../../images/pages/blackfriday/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+html {
+  scroll-behavior: smooth;
+}

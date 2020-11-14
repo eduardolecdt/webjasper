@@ -1,0 +1,19 @@
+/*
+
+INDEX partials FOOTER
+
+*/
+
+footer {
+  background-color: var(--cor-preto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+footer p {
+  font-family: var(--fonte-medium);
+  font-size: 0.9rem;
+  color: var(--cor-primaria-1);
+}

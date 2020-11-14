@@ -1,0 +1,114 @@
+/*
+
+INDEX partials SECTION EXPERIENCIA
+
+*/
+
+section.experiencia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Titulo */
+
+section.experiencia .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  min-height: 600px;
+  border-left: 5px solid var(--cor-primaria-1);
+  border-top: 5px solid var(--cor-primaria-1);
+}
+
+section.experiencia .titulo h2 {
+  font-family: var(--fonte-black);
+  font-size: 2.5rem;
+  color: var(--cor-branco);
+  padding: 20px 50px 15px 50px;
+  line-height: 1;
+  width: 100%;
+  max-width: 600px;
+}
+
+section.experiencia .titulo p {
+  font-family: var(--fonte-regular);
+  font-size: 1.2rem;
+  color: var(--cor-branco);
+  padding: 0px 50px 30px 50px;
+  line-height: 1.4;
+  width: 100%;
+  max-width: 500px;
+}
+
+section.experiencia .titulo button {
+  font-family: var(--fonte-black);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 15px 30px 15px 50px;
+  box-shadow: 10px 10px 10px 1px #d49f114d;
+  background-color: var(--cor-primaria-1);
+  color: var(--cor-secundaria-1);
+  border-radius: 0px 15px 0px 0px;
+}
+
+section.experiencia .titulo button:hover {
+  color: var(--cor-branco);
+  box-shadow: 10px 10px 10px 1px #ffffff4d;
+}
+
+/* Imagem */
+
+section.experiencia .imagem {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  min-height: 600px;
+  border-top: 5px solid var(--cor-primaria-1);
+}
+
+section.experiencia .imagem img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.experiencia {
+    flex-direction: column;
+  }
+  section.experiencia .imagem {
+    border-right: 5px solid var(--cor-primaria-1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.experiencia .imagem {
+    min-height: 450px;
+  }
+  section.experiencia .imagem img {
+    max-width: 400px;
+  }
+  section.experiencia .titulo {
+    min-height: 500px;
+  }
+  section.experiencia .titulo h2 {
+    font-size: 1.7rem;
+    padding: 20px 30px 15px 30px;
+    max-width: 400px;
+  }
+  section.experiencia .titulo p {
+    font-size: 1rem;
+    padding: 0px 30px 30px 30px;
+    max-width: 350px;
+  }
+  section.experiencia .titulo button {
+    font-size: 1rem;
+    padding: 15px 30px 15px 30px;
+  }
+}

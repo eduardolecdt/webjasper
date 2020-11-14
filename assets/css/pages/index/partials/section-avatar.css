@@ -1,0 +1,95 @@
+/*
+
+INDEX partials SECTION AVATAR
+
+*/
+
+section.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px solid var(--cor-primaria-1);
+}
+
+/* Responsivo */
+
+section.avatar .parte {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  padding: 100px 50px;
+}
+
+section.avatar .parte h2 {
+  font-family: var(--fonte-black);
+  color: var(--cor-secundaria-1);
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+section.avatar .parte h3 {
+  font-family: var(--fonte-black);
+  color: var(--cor-branco);
+  font-size: 2rem;
+}
+
+section.avatar .parte h2 span {
+  background-color: var(--cor-secundaria-1);
+  color: var(--cor-primaria-1);
+  padding: 2px 10px;
+  margin-left: 10px;
+  border-radius: 5px 0px 5px 0px;
+}
+
+section.avatar .parte p {
+  font-family: var(--fonte-regular);
+  color: var(--cor-branco);
+  font-size: 1rem;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Responsivo */
+
+section.avatar .parte.um {
+  background-color: var(--cor-primaria-1);
+}
+
+section.avatar .parte.dois h2 {
+  color: var(--cor-primaria-1);
+}
+
+section.avatar .parte.dois h2 span {
+  color: var(--cor-secundaria-1);
+  background-color: var(--cor-primaria-1);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.avatar {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.avatar .parte {
+    padding: 60px 30px;
+  }
+  section.avatar .parte h2 {
+    font-size: 1.2rem;
+  }
+  section.avatar .parte h3 {
+    font-family: var(--fonte-black);
+    color: var(--cor-branco);
+    font-size: 1.4rem;
+  }
+  section.avatar .parte p {
+    font-size: 0.9rem;
+    max-width: 300px;
+  }
+}

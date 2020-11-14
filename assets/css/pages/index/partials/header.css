@@ -1,0 +1,117 @@
+/*
+
+INDEX partials HEADER
+
+*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Titulo */
+
+header .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+  padding: 0px 0px 0px 50px;
+  width: 100%;
+  z-index: 1;
+}
+
+header .titulo h1 {
+  font-family: var(--fonte-black);
+  font-size: 5rem;
+  color: var(--cor-branco);
+  padding: 20px 0px 15px 0px;
+  line-height: 1;
+  width: 100%;
+  max-width: 700px;
+}
+
+header .titulo p {
+  font-family: var(--fonte-regular);
+  font-size: 1.6rem;
+  color: var(--cor-branco);
+  padding-bottom: 30px;
+  line-height: 1.4;
+  width: 100%;
+  max-width: 300px;
+}
+
+header .titulo button {
+  font-family: var(--fonte-black);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 15px 20px;
+  box-shadow: 10px 10px 10px 1px #d49f114d;
+  background-color: var(--cor-primaria-1);
+  color: var(--cor-secundaria-1);
+  border-radius: 0px 15px 0px 15px;
+  border: 3px solid var(--cor-primaria-1);
+}
+
+header .titulo button:hover {
+  background-color: var(--cor-branco);
+  color: var(--cor-primaria-1);
+  border: 3px solid var(--cor-branco);
+  box-shadow: 10px 10px 10px 1px #ffffff4d;
+}
+
+/* Imagem */
+
+header .imagem {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+header .imagem img {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    min-height: 100%;
+  }
+  header .titulo {
+    padding: 100px 30px 100px 30px;
+  }
+  header .titulo h1 {
+    max-width: 600px;
+    font-size: 4rem;
+  }
+  header .titulo p {
+    max-width: 400px;
+    font-size: 1.4rem;
+  }
+  header .imagem {
+    min-height: 300px;
+  }
+  header .titulo button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .titulo h1 {
+    max-width: 600px;
+    font-size: 3rem;
+  }
+  header .titulo p {
+    max-width: 300px;
+    font-size: 1.1rem;
+  }
+}
