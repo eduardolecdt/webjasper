@@ -11,12 +11,26 @@ VARIABLES
 --cor-branco: #FFFFFF;
 --cor-preto: #000000;
 
+--cor-primaria-1: #ee632e;
+--cor-primaria-2: #ed7c2f;
+--cor-primaria-3: #ea902f;
+
+--cor-cinza-1: #eaeaf4;
+--cor-cinza-2: #c1c3c9;
+--cor-cinza-3: #808289;
+--cor-cinza-4: #64666d;
+
+--cor-vermelho: #f13d55;
+--cor-verde: #39a26c;
+--cor-azul: #16bcf8;
+
 }
 
 /* Fontes */
 
 :root {
 
---fonte: '';
+--fonte-extrabold: 'clarika_extrabold';
+--fonte-medium: 'poppins_medium';
 
 }

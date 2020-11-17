@@ -9,6 +9,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
   background-color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -129,7 +130,7 @@ svg {
 
 ::selection {
   color: #ffffff;
-  background-color: #fc8712;
+  background-color: #ee632e;
 }
 
 h1,h2,h3,h4,h5,h6 {

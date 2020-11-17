@@ -9,3 +9,5 @@ GLOBAL
 @import './reset.css';
 @import './scrollbar.css';
 @import './variables.css';
+@import './nav.css';
+@import './loading.css';
