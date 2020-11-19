@@ -9,21 +9,8 @@ header {
   align-items: center;
   justify-content: center;
   background-color: var(--cor-branco);
-  background-image: url('../../../../images/pages/index/background-header.svg');
-  background-size: 60%;
-  background-repeat: repeat-x;
   position: relative;
-  animation: backgroundHeader 10000s linear infinite;
-  height: 100vh;
-}
-
-@keyframes backgroundHeader {
-  0% {
-    background-position: 0% bottom;
-  }
-  100% {
-    background-position: 40000% bottom;
-  }
+  height: 80vh;
 }
 
 /* Imagem */
@@ -32,7 +19,7 @@ header .imagem {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   background-image: url('../../../../images/pages/index/background-header-imagem.svg');
   background-size: contain;
@@ -42,6 +29,7 @@ header .imagem {
 
 header .imagem img {
   width: 100%;
+  max-width: 600px;
 }
 
 /* Titulo */
@@ -52,7 +40,7 @@ header .titulo {
   align-items: flex-start;
   justify-content: center;
   text-align: left;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   padding: 0px 50px;
 }
@@ -87,11 +75,11 @@ header .titulo p {
 @media screen and (max-width: 1000px) {
   header {
     flex-direction: column;
-    background-size: 500%;
+    height: 100%;
   }
   header .titulo {
     height: 100%;
-    padding: 60px 30px 0px 30px;
+    padding: 130px 30px 60px 30px;
   }
   header .imagem {
     height: 100%;
@@ -101,9 +89,6 @@ header .titulo p {
   header .imagem img {
     width: 100%;
   }
-}
-
-@media screen and (max-width:600px) {
   header .titulo img {
     max-width: 150px;
   }

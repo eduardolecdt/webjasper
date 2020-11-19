@@ -10,4 +10,5 @@ GLOBAL
 @import './scrollbar.css';
 @import './variables.css';
 @import './nav.css';
-@import './loading.css';
+@import './video.css';
+@import './modal.css';

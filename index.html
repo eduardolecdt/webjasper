@@ -80,11 +80,7 @@
   <link href="./assets/css/pages/index/index.css" rel="stylesheet">
 
 </head>
-<body class="carregando">
-
-  <!-- LOADING -->
-  <div class="loading">
-  </div>
+<body>
 
   <!-- NAVBAR -->
   <nav>
@@ -138,8 +134,76 @@
     </div>
   </header>
 
-  <!-- section NOME -->
-  <section class="nome">
+  <!-- section PASSOS -->
+  <section class="passos">
+    <div class="passo">
+      <img src="./assets/images/pages/index/passo-1.svg">
+      <p>Analise qual problema você deseja resolver. Se deseja melhorar e rentabilizar o layout da sua loja ou acabar com os produtos vencidos.</p>
+    </div>
+    <div class="passo">
+      <img src="./assets/images/pages/index/passo-2.svg">
+      <p>Escolha qual tecnologia da WebJasper você deseja adquirir. Escolha entre o Sistema de Planograma ou o Sistema de Validade.</p>
+    </div>
+    <div class="passo">
+    <img src="./assets/images/pages/index/passo-3.svg">
+      <p>Preencha o formulário no fim da página e em até 24 horas nossa equipe vai entrar em contato via WhatsApp para tirar todas as suas dúvidas e mandar um material mais completo.</p>
+    </div>
+  </section>
+
+  <!-- section VALIDADE -->
+  <section class="validade">
+    <div class="imagem">
+      <img src="./assets/images/pages/index/imagem-validade.png">
+    </div>
+    <div class="titulo">
+      <img class="logotipo" src="./assets/images/pages/global/logo-validade.svg">
+      <h2>Acabe com os produtos vencidos em sua loja</h2>
+      <p class="descricao">Nosso sistema possui uma versão WEB e um Aplicativo com exclusivo leitor de código de barras. Receba notificações em tempo real dos próximos vencimentos, acompanhe com antecedência os produtos com data curta, faça ações promocionais sem sacrificar sua margem e organize o fluxo de rebaixas com área comercial.</p>
+      <p class="descricao">Chega de milhares de e-mails durante o dia, o comprador recebe tudo de forma organizada e separado por loja e categoria.</p>
+      <div class="botoes">
+        <a><button class="principal">Conhecer Sistema</button></a>
+        <button class="video_abrir"><img src="./assets/images/pages/global/icone-video.svg">Assistir Vídeo</button>
+      </div>
+    </div>
+    <!-- VIDEO VALIDADE -->
+    <div class="modal">
+      <button class="fechar"><img src="./assets/images/pages/global/icones/fechar-modal.svg">Fechar Vídeo</button>
+      <div class="video validade aparecer">
+        <img class="icone play mostrar" src="./assets/images/pages/global/icones/video-play.svg">
+        <img class="icone pause ocultar" src="./assets/images/pages/global/icones/video-pause.svg">
+        <video>
+          <source src="./assets/videos/sistema-validade.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- section PLANOGRAMA -->
+  <section class="planograma">
+    <div class="titulo">
+      <img class="logotipo" src="./assets/images/pages/global/logo-planograma.svg">
+      <h2>Tenha uma loja com o layout bonito e ao mesmo tempo rentável</h2>
+      <p class="descricao">Com o sistema de Planograma de Loja da Web Jasper você tem controle total na palma da sua mão, e melhora a sua e rentabiliza no PDV.</p>
+      <p class="descricao">A tecnologia rentabiliza sua loja analisando mais de 20 critérios como: margem, volume de vendas, venda em R$, negociações de espaço, novidades, fluxo, perfil do cliente, tipo de mobiliário e muitos outros, tudo isso de forma automática e sem complicação.</p>
+      <div class="botoes">
+        <a><button class="principal">Conhecer Sistema</button></a>
+        <button class="video_abrir"><img src="./assets/images/pages/global/icone-video.svg">Assistir Vídeo</button>
+      </div>
+    </div>
+    <div class="imagem">
+      <img src="./assets/images/pages/index/imagem-planograma.png">
+    </div>
+    <!-- VIDEO PLANOGRAMA -->
+    <div class="modal">
+      <button class="fechar"><img src="./assets/images/pages/global/icones/fechar-modal.svg">Fechar Vídeo</button>
+      <div class="video planograma aparecer">
+        <img class="icone play mostrar" src="./assets/images/pages/global/icones/video-play.svg">
+        <img class="icone pause ocultar" src="./assets/images/pages/global/icones/video-pause.svg">
+        <video>
+          <source src="./assets/videos/sistema-planograma.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
@@ -147,10 +211,11 @@
   </footer>
 
   <!-- JS globais -->
-  <script src="./assets/js/global/dragdrop.js"></script>
-  <script src="./assets/js/global/loading.js"></script>
-  <script src="./assets/js/global/lazy-loading.js"></script>
-  <script src="./assets/js/global/nav.js"></script>
+  <script async src="./assets/js/global/dragdrop.js"></script>
+  <script async src="./assets/js/global/lazy-loading.js"></script>
+  <script async src="./assets/js/global/nav.js"></script>
+  <script async src="./assets/js/global/video.js"></script>
+  <script async src="./assets/js/pages/index/modal.js"></script>
 
   <!-- JS locais
   <script src="./assets/js/pages/index/links.js"></script> -->
