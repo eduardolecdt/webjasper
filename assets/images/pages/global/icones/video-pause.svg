@@ -3,12 +3,15 @@
 <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
+	.st0{fill:#EE632E;}
+	.st1{fill:#FFFFFF;}
 </style>
+<path class="st0" d="M115.5,150H34.5C15.5,150,0,134.5,0,115.5V34.5C0,15.5,15.5,0,34.5,0h80.9C134.5,0,150,15.5,150,34.5v80.9
+	C150,134.5,134.5,150,115.5,150z"/>
 <g>
-	<rect x="1.2" y="0.9" class="st0" width="56.2" height="148.2"/>
+	<rect x="27.5" y="27.3" class="st1" width="36.2" height="95.4"/>
 </g>
 <g>
-	<rect x="92.6" y="0.9" class="st0" width="56.2" height="148.2"/>
+	<rect x="86.3" y="27.3" class="st1" width="36.2" height="95.4"/>
 </g>
 </svg>

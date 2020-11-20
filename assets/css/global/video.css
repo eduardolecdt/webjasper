@@ -14,32 +14,31 @@ global VIDEO
 /* icones */
 
 .video img.icone {
-  width: 50px;
-  height: 50px;
-  min-width: 50px;
-  min-height: 50px;
-  position: absolute;
-  cursor: pointer;
-}
-
-.video img.mostrar {
-  opacity: 1;
-  visibility: visible;
-}
-
-.video.aparecer img {
-  display: flex;
-}
-
-.video img {
-  display: none;
-  z-index: 3;
-}
-
-.video img.ocultar {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.video.reproduzindo img.pause {
+  animation: fadeIn 1.5s;
+  z-index: 2;
+}
+
+.video.pausado img.play {
+  animation: fadeIn 1.5s;
+  z-index: 2;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 1;visibility: visible;}
+  100% {opacity: 0;visibility: hidden;}
 }
 
 /* Video */
@@ -51,10 +50,6 @@ video::-webkit-media-controls-mute-button,
 video::-webkit-media-controls-timeline,
 video::-webkit-media-controls-current-time-display {
   display: none;
-}
-
-.video.aparecer video {
-  opacity: 0.5;
 }
 
 .video video {

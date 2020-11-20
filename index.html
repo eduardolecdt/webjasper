@@ -161,20 +161,24 @@
       <p class="descricao">A tecnologia rentabiliza sua loja analisando mais de 20 critérios como: margem, volume de vendas, venda em R$, negociações de espaço, novidades, fluxo, perfil do cliente, tipo de mobiliário e muitos outros, tudo isso de forma automática e sem complicação.</p>
       <div class="botoes">
         <a><button class="principal">Conhecer Sistema</button></a>
-        <button class="video_abrir"><img src="./assets/images/pages/global/icone-video.svg">Assistir Vídeo</button>
+        <button class="video_abrir" name="abrir_modal_planograma"><img src="./assets/images/pages/global/icone-video.svg">Assistir Vídeo</button>
       </div>
     </div>
-    <!-- VIDEO PLANOGRAMA -->
-    <div class="modal">
-      <button class="fechar"><img src="./assets/images/pages/global/icones/fechar-modal.svg">Fechar Vídeo</button>
-      <div class="video planograma aparecer">
-        <img class="icone play mostrar" src="./assets/images/pages/global/icones/video-play.svg">
-        <img class="icone pause ocultar" src="./assets/images/pages/global/icones/video-pause.svg">
+
+    <!-- VIDEO VALIDADE -->
+    <div class="modal" name="modal_video">
+      <button class="fechar">
+        <img src="./assets/images/pages/global/icones/fechar-modal.svg">Fechar Vídeo
+      </button>
+      <div class="video pausado">
+        <img class="icone play" src="./assets/images/pages/global/icones/video-play.svg">
+        <img class="icone pause" src="./assets/images/pages/global/icones/video-pause.svg">
         <video>
           <source src="./assets/videos/sistema-planograma.mp4" type="video/mp4">
         </video>
       </div>
     </div>
+
   </section>
 
   <!-- section VALIDADE -->
@@ -186,23 +190,27 @@
       <p class="descricao">Chega de milhares de e-mails durante o dia, o comprador recebe tudo de forma organizada e separado por loja e categoria.</p>
       <div class="botoes">
         <a><button class="principal">Conhecer Sistema</button></a>
-        <button class="video_abrir"><img src="./assets/images/pages/global/icone-video.svg">Assistir Vídeo</button>
+        <button class="video_abrir" name="abrir_modal_validade"><img src="./assets/images/pages/global/icone-video.svg">Assistir Vídeo</button>
       </div>
     </div>
     <div class="imagem">
       <img src="./assets/images/pages/index/imagem-validade.png">
     </div>
+
     <!-- VIDEO VALIDADE -->
-    <div class="modal">
-      <button class="fechar"><img src="./assets/images/pages/global/icones/fechar-modal.svg">Fechar Vídeo</button>
-      <div class="video validade aparecer">
-        <img class="icone play mostrar" src="./assets/images/pages/global/icones/video-play.svg">
-        <img class="icone pause ocultar" src="./assets/images/pages/global/icones/video-pause.svg">
+    <div class="modal" name="modal_video">
+      <button class="fechar">
+        <img src="./assets/images/pages/global/icones/fechar-modal.svg">Fechar Vídeo
+      </button>
+      <div class="video pausado">
+        <img class="icone play" src="./assets/images/pages/global/icones/video-play.svg">
+        <img class="icone pause" src="./assets/images/pages/global/icones/video-pause.svg">
         <video>
           <source src="./assets/videos/sistema-validade.mp4" type="video/mp4">
         </video>
       </div>
     </div>
+
   </section>
 
   <!-- section CLIENTES -->
@@ -256,8 +264,8 @@
   <script async src="./assets/js/global/dragdrop.js"></script>
   <script async src="./assets/js/global/lazy-loading.js"></script>
   <script async src="./assets/js/global/nav.js"></script>
-  <script async src="./assets/js/global/video.js"></script>
-  <script async src="./assets/js/pages/index/modal.js"></script>
+  <script async src="./assets/js/global/modal-video.js"></script>
+  <script async src="./assets/js/pages/index/modal-abrir.js"></script>
 
   <!-- JS locais
   <script src="./assets/js/pages/index/links.js"></script> -->
