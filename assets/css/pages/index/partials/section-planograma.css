@@ -8,7 +8,7 @@ section.planograma {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--cor-cinza-1);
+  background-color: var(--cor-branco);
 }
 
 /* Imagem */
@@ -18,12 +18,12 @@ section.planograma .imagem {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  width: 100%;
+  width: 90%;
   background-image: url('../../../../images/pages/index/background-sistema-planograma.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top right;
-  margin-bottom: auto;
+  background-position: bottom left;
+  margin-top: auto;
 }
 
 section.planograma .imagem img {
@@ -81,7 +81,7 @@ section.planograma .titulo .botoes button.principal {
   font-size: 1.1rem;
   color: var(--cor-primaria-1);
   border: 2px solid var(--cor-primaria-1);
-  background-color: var(--cor-cinza-1);
+  background-color: var(--cor-branco);
   padding: 15px 30px;
   border-radius: 15px;
 }
@@ -121,15 +121,16 @@ section.planograma .titulo button.video_abrir:hover {
     flex-direction: column-reverse;
   }
   section.planograma .imagem {
-    min-height: 300px;
+    min-height: 350px;
     align-items: flex-end;
-    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 100%;
   }
   section.planograma .imagem img {
     width: 100%;
   }
   section.planograma .titulo {
-    padding: 50px 30px 80px 30px;
+    padding: 80px 30px 80px 30px;
   }
   section.planograma .titulo img {
     max-height: 50px;

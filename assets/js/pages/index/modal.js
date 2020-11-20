@@ -14,6 +14,11 @@ const fecharModalPlanograma = document.querySelector('section.planograma .modal 
 const videoValidadeReproduzindo = document.querySelector('.video.validade video')
 const videoPlanogramaReproduzindo = document.querySelector('.video.planograma video')
 
+const playValidadeModal = document.querySelector('.video.validade img.play')
+const playPlanogramaModal = document.querySelector('.video.planograma img.play')
+const pauseValidadeModal = document.querySelector('.video.validade img.pause')
+const pausePlanogramaModal = document.querySelector('.video.planograma img.pause')
+
 abrirModalValidade.onclick = function () {
   modalValidade.classList.add('mostrar')
   body.classList.add('modal_aberto')
@@ -23,6 +28,10 @@ fecharModalValidade.onclick = function () {
   modalValidade.classList.remove('mostrar')
   videoValidadeReproduzindo.pause()
   body.classList.remove('modal_aberto')
+  playValidadeModal.classList.add('mostrar')
+  playValidadeModal.classList.remove('ocultar')
+  pauseValidadeModal.classList.add('ocultar')
+  pauseValidadeModal.classList.remove('mostrar')
 }
 
 abrirModalPlanograma.onclick = function () {
@@ -34,4 +43,8 @@ fecharModalPlanograma.onclick = function () {
   modalPlanograma.classList.remove('mostrar')
   videoPlanogramaReproduzindo.pause()
   body.classList.remove('modal_aberto')
+  playPlanogramaModal.classList.add('mostrar')
+  playPlanogramaModal.classList.remove('ocultar')
+  pausePlanogramaModal.classList.add('ocultar')
+  pausePlanogramaModal.classList.remove('mostrar')
 }

@@ -8,6 +8,7 @@ section.validade {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--cor-cinza-1);
 }
 
 /* Imagem */
@@ -17,12 +18,12 @@ section.validade .imagem {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  width: 100%;
+  width: 90%;
   background-image: url('../../../../images/pages/index/background-sistema-validade.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top left;
-  margin-bottom: auto;
+  background-position: bottom right;
+  margin-top: auto;
 }
 
 section.validade .imagem img {
@@ -80,7 +81,7 @@ section.validade .titulo .botoes button.principal {
   font-size: 1.1rem;
   color: var(--cor-primaria-1);
   border: 2px solid var(--cor-primaria-1);
-  background-color: var(--cor-branco);
+  background-color: var(--cor-cinza-1);
   padding: 15px 30px;
   border-radius: 15px;
 }
@@ -120,15 +121,17 @@ section.validade .titulo button.video_abrir:hover {
     flex-direction: column;
   }
   section.validade .imagem {
-    min-height: 300px;
+    min-height: 350px;
     align-items: flex-end;
+    padding-bottom: 50px;
+    width: 100%;
+    padding-right: 15px;
   }
   section.validade .imagem img {
     width: 100%;
-    padding-right: 20px;
   }
   section.validade .titulo {
-    padding: 50px 30px 80px 30px;
+    padding: 80px 30px 30px 30px;
   }
   section.validade .titulo img {
     max-height: 50px;

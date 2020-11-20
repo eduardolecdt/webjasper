@@ -10,7 +10,7 @@ header {
   justify-content: center;
   background-color: var(--cor-branco);
   position: relative;
-  height: 80vh;
+  height: 90vh;
 }
 
 /* Imagem */
@@ -19,7 +19,7 @@ header .imagem {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   background-image: url('../../../../images/pages/index/background-header-imagem.svg');
   background-size: contain;
@@ -40,7 +40,7 @@ header .titulo {
   align-items: flex-start;
   justify-content: center;
   text-align: left;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   padding: 0px 50px;
 }
