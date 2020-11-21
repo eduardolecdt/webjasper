@@ -1,0 +1,11 @@
+/*
+
+SISTEMA VALIDADE partials SECTION DIFERENCA
+
+*/
+
+section.diferenca {
+  min-height: 400px;
+  background-color: var(--cor-primaria-1);
+  background-image: linear-gradient(to left, #ee632e, #ed7c2f, #ea902f);
+}

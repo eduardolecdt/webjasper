@@ -17,6 +17,7 @@
 
   function habilitarCliqueBotaoFechar() {
     const botaoFechar = 'div[name="modal_video"] button.fechar'
+    const body = document.querySelector('body')
 
     window.addEventListener('click', (evento) => {
       if (!evento.target.matches(botaoFechar)) return
@@ -26,6 +27,7 @@
 
       video.pause()
       modal.classList.remove('mostrar')
+      body.classList.remove('modal_aberto')
     })
   }
 

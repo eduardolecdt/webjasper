@@ -16,20 +16,20 @@ section.contato {
 
 section.contato .imagem {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
-  width: 90%;
+  width: 100%;
   min-height: 100vh;
-  background-image: url('../../../../images/pages/index/background-sistema-planograma.svg');
+  background-image: url('../../../../images/pages/global/background-faixa-direita.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: right bottom;
   margin-top: auto;
 }
 
 section.contato .imagem img {
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 /* Titulo */
@@ -98,7 +98,7 @@ section.contato .titulo button:hover {
 
 @media screen and (max-width: 1000px) {
   section.contato {
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: 100%;
   }
   section.contato .titulo {
@@ -108,7 +108,7 @@ section.contato .titulo button:hover {
   section.contato .imagem {
     height: 100%;
     max-width: 600px;
-    margin-right: auto;
+    margin-left: auto;
     width: 100%;
     min-height: auto;
   }

@@ -19,7 +19,7 @@ section.planograma .imagem {
   justify-content: center;
   min-height: 100vh;
   width: 90%;
-  background-image: url('../../../../images/pages/index/background-sistema-planograma.svg');
+  background-image: url('../../../../images/pages/global/background-faixa-esquerda.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom left;

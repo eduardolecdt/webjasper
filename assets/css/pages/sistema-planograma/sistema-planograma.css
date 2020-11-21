@@ -8,3 +8,10 @@ SISTEMA PLANOGRAMA
 
 /* Partials */
 
+@import './partials/header.css';
+@import './partials/section-clientes.css';
+@import './partials/section-sobre.css';
+@import './partials/section-diferenca.css';
+@import './partials/section-contato.css';
+@import './partials/footer.css';
+

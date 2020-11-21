@@ -3,23 +3,13 @@
 (function () {
 
   // variaveis
-  const __modalVideoPlanograma = document.querySelector('section.planograma .modal')
-  const __modalVideoValidade = document.querySelector('section.validade .modal')
+  const __modalVideoValidade = document.querySelector('header .modal')
   const __modalPoliticaPrivacidade = document.querySelector('footer .modal')
   const __body = document.querySelector('body')
 
   // metodos
-  function botaoAbrirModalPlanograma() {
-    const botaoAbrirModalPlanograma = document.querySelector('section.planograma button[name="abrir_modal_planograma"]')
-
-    botaoAbrirModalPlanograma.addEventListener('click', () => {
-      __modalVideoPlanograma.classList.add('mostrar')
-      __body.classList.add('modal_aberto')
-    })
-  }
-
   function botaoAbrirModalValidade() {
-    const botaoAbrirModalValidade = document.querySelector('section.validade button[name="abrir_modal_validade"]')
+    const botaoAbrirModalValidade = document.querySelector('header button[name="abrir_modal_validade"]')
 
     botaoAbrirModalValidade.addEventListener('click', () => {
       __modalVideoValidade.classList.add('mostrar')
@@ -47,7 +37,6 @@
   }
 
   // iniciar
-  botaoAbrirModalPlanograma()
   botaoAbrirModalValidade()
   botaoAbrirModalPoliticaPrivacidade()
   fecharModalPoliticaPrivacidade()

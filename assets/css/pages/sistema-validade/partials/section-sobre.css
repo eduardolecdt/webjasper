@@ -1,0 +1,14 @@
+/*
+
+SISTEMA VALIDADE partials SECTION SOBRE
+
+*/
+
+section.sobre {
+  min-height: 400px;
+  background-color: var(--cor-branco);
+}
+
+section.sobre:nth-child(even) {
+  background-color: var(--cor-cinza-1);
+}

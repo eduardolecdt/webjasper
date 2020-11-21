@@ -24,7 +24,7 @@ input:focus {
   background-color: var(--cor-branco);
 }
 
-textarea {
+textarea.formulario {
   font-family: var(--fonte-medium);
   font-size: 1rem;
   color: var(--cor-primaria-1);
@@ -36,15 +36,15 @@ textarea {
   resize: none;
 }
 
-textarea[name=foo] {
+textarea.formulario[name=foo] {
   resize: none;
 }
 
-textarea::placeholder {
+textarea.formulario::placeholder {
   color: var(--cor-cinza-3);
 }
 
-textarea:focus {
+textarea.formulario:focus {
   color: var(--cor-cinza-4);
   background-color: var(--cor-branco);
 }
