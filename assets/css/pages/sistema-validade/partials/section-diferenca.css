@@ -5,7 +5,49 @@ SISTEMA VALIDADE partials SECTION DIFERENCA
 */
 
 section.diferenca {
-  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
   background-color: var(--cor-primaria-1);
   background-image: linear-gradient(to left, #ee632e, #ed7c2f, #ea902f);
+}
+
+section.diferenca button {
+  font-family: var(--fonte-extrabold);
+  font-size: 1rem;
+  color: var(--cor-branco);
+  padding: 13px 20px;
+  border: 2px solid var(--cor-branco);
+  background-color: transparent;
+  border-radius: 13px;
+  margin-left: 15px;
+}
+
+section.diferenca button:hover {
+  background-color: var(--cor-branco);
+  color: var(--cor-primaria-1);
+}
+
+section.diferenca p {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.diferenca {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+  section.diferenca button {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
 }

@@ -46,6 +46,7 @@ nav .whatsapp:hover {
 nav .whatsapp img {
   width: 24px;
   height: 24px;
+  pointer-events: none;
 }
 
 nav .whatsapp div {
@@ -55,6 +56,7 @@ nav .whatsapp div {
   justify-content: center;
   text-align: left;
   padding-left: 10px;
+  pointer-events: none;
 }
 
 nav .whatsapp div p {
@@ -201,6 +203,7 @@ nav .menu .whatsapp_menu:hover {
 nav .menu .whatsapp_menu img {
   width: 24px;
   height: 24px;
+  pointer-events: none;
 }
 
 nav .menu .whatsapp_menu div {
@@ -210,6 +213,7 @@ nav .menu .whatsapp_menu div {
   justify-content: center;
   text-align: left;
   padding-left: 10px;
+  pointer-events: none;
 }
 
 nav .menu .whatsapp_menu div p {

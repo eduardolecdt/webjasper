@@ -83,36 +83,44 @@
 
   <!-- NAVBAR -->
   <nav>
-    <img class="logo" src="./assets/images/pages/global/icone.svg">
+    <!-- Icone WebJasper -->
+    <img id="para_inicio" class="logo" src="./assets/images/pages/global/icone.svg">
+    <!-- Opções do menu desktop -->
     <div class="opcoes">
-      <a id="sistema_planograma_nav" href="">Sistema de Planograma</a>
-      <a id="sistema_validade_nav" href="">Sistema de Validade</a>
-      <a class="destaque" href="" target="_blank" id="area_login_nav">Login</a>
+      <a id="para_planograma">Sistema de Planograma</a>
+      <a id="para_validade">Sistema de Validade</a>
+      <a class="destaque" id="para_login">Login</a>
     </div>
-    <a class="whatsapp" href="" target="_blank" id="whatsapp_webjasper_nav">
+    <!-- Botão para whatsapp -->
+    <a class="whatsapp" id="para_whatsapp">
       <img src="./assets/images/pages/global/icones/whatsapp-verde.svg">
       <div class="info">
         <p>Fale com</p>
         <p>a gente</p>
       </div>
     </a>
+    <!-- Abrir ou Fechar menu mobile -->
     <div class="abrir_fechar">
       <img class="abrir" src="./assets/images/pages/global/icones/abrir-menu.svg">
       <img class="fechar" src="./assets/images/pages/global/icones/fechar-menu.svg">
     </div>
+    <!-- Menu Mobile -->
     <div class="menu">
+      <!-- Opções do menu mobile -->
       <div class="opcoes_menu">
-        <a id="sistema_planograma_menu" href="">Sistema de Planograma</a>
-        <a id="sistema_validade_menu" href="">Sistema de Validade</a>
-        <a class="destaque" href="" target="_blank" id="area_login_menu">Login</a>
+        <a id="para_planograma">Sistema de Planograma</a>
+        <a id="para_validade">Sistema de Validade</a>
+        <a class="destaque" id="para_login">Login</a>
       </div>
-      <a class="whatsapp_menu" href="" target="_blank" id="whatsapp_webjasper_menu">
+      <!-- Botão para o whatsapp -->
+      <a class="whatsapp_menu" id="para_whatsapp">
         <img src="./assets/images/pages/global/icones/whatsapp-verde.svg">
         <div class="info">
           <p>Fale com</p>
           <p>a gente</p>
         </div>
       </a>
+      <!-- Design da faixa na base do menu mobile -->
       <div class="faixa">
         <div class="um"></div>
         <div class="dois"></div>
@@ -123,6 +131,7 @@
 
   <!-- HEADER -->
   <header>
+    <!-- Titulo -->
     <div class="titulo">
       <img src="./assets/images/pages/global/logo-text-webjasper.svg">
       <h2>O melhor e mais completo sistema de planograma do mercado.</h2>
@@ -130,6 +139,7 @@
       <p>E você ainda pode utilizar nossas funcoes de gestão de abastecimento e controle de ruptura pelo planograma.</p>
       <p>Conheça também nosso sistema de validade!</p>
     </div>
+    <!-- Imagem do header -->
     <div class="imagem">
       <img src="./assets/images/pages/global/imagem-header.png">
     </div>
@@ -137,44 +147,53 @@
 
   <!-- section PASSOS -->
   <section class="passos">
+    <!-- Primeiro Passo -->
     <div class="passo">
       <img src="./assets/images/pages/index/passo-1.svg">
       <p>Analise qual problema você deseja resolver. Se deseja melhorar e rentabilizar o layout da sua loja ou acabar com os produtos vencidos.</p>
     </div>
+    <!-- Segundo Passo -->
     <div class="passo">
       <img src="./assets/images/pages/index/passo-2.svg">
       <p>Escolha qual tecnologia da WebJasper você deseja adquirir. Escolha entre o Sistema de Planograma ou o Sistema de Validade.</p>
     </div>
+    <!-- terceiro Passo -->
     <div class="passo">
-    <img src="./assets/images/pages/index/passo-3.svg">
+      <img src="./assets/images/pages/index/passo-3.svg">
       <p>Preencha o formulário no fim da página e em até 24 horas nossa equipe vai entrar em contato via WhatsApp para tirar todas as suas dúvidas e mandar um material mais completo.</p>
     </div>
   </section>
 
   <!-- section PLANOGRAMA -->
   <section class="planograma">
+    <!-- Imagem do Planograma -->
     <div class="imagem">
       <img data-src="./assets/images/pages/global/imagem-planograma.png">
     </div>
+    <!-- Título do planograma -->
     <div class="titulo">
       <img class="logotipo" src="./assets/images/pages/global/logo-planograma.svg">
       <h2>Tenha uma loja com o layout bonito e ao mesmo tempo rentável</h2>
       <p class="descricao">Com o sistema de Planograma de Loja da Web Jasper você tem controle total na palma da sua mão, e melhora a sua e rentabiliza no PDV.</p>
       <p class="descricao">A tecnologia rentabiliza sua loja analisando mais de 20 critérios como: margem, volume de vendas, venda em R$, negociações de espaço, novidades, fluxo, perfil do cliente, tipo de mobiliário e muitos outros, tudo isso de forma automática e sem complicação.</p>
+      <!-- Botões -->
       <div class="botoes">
-        <a id="sistema_planograma" href=""><button class="principal">Conhecer Sistema</button></a>
+        <button id="para_planograma" class="principal">Conhecer Sistema</button>
         <button class="video_abrir" name="abrir_modal_planograma"><img src="./assets/images/pages/global/icone-video.svg">Assistir Vídeo</button>
       </div>
     </div>
 
-    <!-- VIDEO VALIDADE -->
+    <!-- MODAL COM VIDEO VALIDADE -->
     <div class="modal" name="modal_video">
+      <!-- Botão para fechar o modal -->
       <button class="fechar">
         <img src="./assets/images/pages/global/icones/fechar-modal.svg">Fechar Vídeo
       </button>
+      <!-- Ícones de Pause e Play do vídeo -->
       <div class="video pausado">
         <img class="icone play" src="./assets/images/pages/global/icones/video-play.svg">
         <img class="icone pause" src="./assets/images/pages/global/icones/video-pause.svg">
+        <!-- Vídeo -->
         <video>
           <source src="./assets/videos/sistema-planograma.mp4" type="video/mp4">
         </video>
@@ -185,28 +204,34 @@
 
   <!-- section VALIDADE -->
   <section class="validade">
+    <!-- Titulo -->
     <div class="titulo">
       <img class="logotipo" src="./assets/images/pages/global/logo-validade.svg">
       <h2>Acabe com os produtos vencidos em sua loja</h2>
       <p class="descricao">Nosso sistema possui uma versão WEB e um Aplicativo com exclusivo leitor de código de barras. Receba notificações em tempo real dos próximos vencimentos, acompanhe com antecedência os produtos com data curta, faça ações promocionais sem sacrificar sua margem e organize o fluxo de rebaixas com área comercial.</p>
       <p class="descricao">Chega de milhares de e-mails durante o dia, o comprador recebe tudo de forma organizada e separado por loja e categoria.</p>
+      <!-- Botões -->
       <div class="botoes">
-        <a id="sistema_validade" href=""><button class="principal">Conhecer Sistema</button></a>
+        <button id="para_validade" class="principal">Conhecer Sistema</button>
         <button class="video_abrir" name="abrir_modal_validade"><img src="./assets/images/pages/global/icone-video.svg">Assistir Vídeo</button>
       </div>
     </div>
+    <!-- Imagem do Validade -->
     <div class="imagem">
       <img data-src="./assets/images/pages/global/imagem-validade.png">
     </div>
 
-    <!-- VIDEO VALIDADE -->
+    <!-- MODAL VIDEO VALIDADE -->
     <div class="modal" name="modal_video">
+      <!-- botão para fechar o modal -->
       <button class="fechar">
         <img src="./assets/images/pages/global/icones/fechar-modal.svg">Fechar Vídeo
       </button>
+      <!-- Ícones de Pause e Play do vídeo -->
       <div class="video pausado">
         <img class="icone play" src="./assets/images/pages/global/icones/video-play.svg">
         <img class="icone pause" src="./assets/images/pages/global/icones/video-pause.svg">
+        <!-- video -->
         <video>
           <source src="./assets/videos/sistema-validade.mp4" type="video/mp4">
         </video>
@@ -217,11 +242,13 @@
 
   <!-- section CLIENTES -->
   <section class="clientes">
+    <!-- Título -->
     <div class="titulo">
       <h2>Nossos Principais</h2>
       <h3>Clientes</h3>
       <p>As tecnologias do WebJasper foram escolhidas pelos melhores do varejo.</p>
     </div>
+    <!-- Imagens dos Clientes -->
     <div class="imagem">
       <img data-src="./assets/images/pages/global/clientes/cliente-1.png">
       <img data-src="./assets/images/pages/global/clientes/cliente-2.png">
@@ -236,17 +263,21 @@
 
   <!-- section CONTATO -->
   <section class="contato">
+    <!-- Título -->
     <div class="titulo">
       <img src="./assets/images/pages/global/logo-text-webjasper.svg">
       <h2>Vamos conversar?</h2>
       <p>Preencha os dados abaixo e em 24 horas nossa equipe estrará em contato com o seu whatsapp para mostrar o poder que é ter a WebJasper como sua parceira.</p>
+      <!-- Inputs -->
       <input spellcheck="false" type="text" placeholder="Qual seu nome?">
       <input spellcheck="false" type="email" placeholder="Qual seu email?">
       <input spellcheck="false" type="tel" placeholder="Qual seu whatsapp?">
       <input spellcheck="false" type="text" placeholder="Qual sua empresa?">
       <textarea class="formulario" rows="8" spellcheck="false" placeholder="Mensagem..."></textarea>
+      <!-- Enviar os dados -->
       <button>Enviar</button>
     </div>
+    <!-- Imagem -->
     <div class="imagem">
       <img data-src="./assets/images/pages/global/imagem-contato.png">
     </div>
@@ -254,16 +285,23 @@
 
   <!-- FOOTER -->
   <footer>
+    <!-- Texto do footer -->
     <div class="texto">
       <p>Copyright © 2014-2020 Web Jasper. Todos os direitos Reservados.</p>
       <p>Rua Francisco Oscar Karnal 218 Sala 802 Lajeado - RS</p>
+      <!-- botão para abrir modal -->
       <button name="abrir_politica_privacidade">Política de Privacidade</button>
     </div>
-    <img class="logotipo" src="./assets/images/pages/global/logo-footer.svg">
+    <!-- Imagem do footer -->
+    <img id="para_inicio" class="logotipo" src="./assets/images/pages/global/logo-footer.svg">
+
+    <!-- MODAL POLITICAS DE PRIVACIDADE -->
     <div class="modal" name="modal_politica_privacidade">
+      <!-- Botão para fechar modal -->
       <button class="fechar">
         <img src="./assets/images/pages/global/icones/fechar-modal.svg">Fechar
       </button>
+      <!-- Textos -->
       <textarea readonly disabled>
 Política de Privacidade - LGPD
 
@@ -426,6 +464,7 @@ P. INFORMAÇÕES E DÚVIDAS
 14.1. Dúvidas sobre a Política ou sobre Seus Dados Pessoais: Se após a leitura desta Política você tiver quaisquer dúvidas ou quiser apresentar alguma solicitação relativa a seus dados pessoais, você pode entrar em contato com nosso time de privacidade ou com nosso Encarregado(a) por meio deste contato: micheljasper@webjasper.com.br 51993634288.
       </textarea>
     </div>
+
   </footer>
 
   <!-- JS globais -->
@@ -433,11 +472,10 @@ P. INFORMAÇÕES E DÚVIDAS
   <script async src="./assets/js/global/lazy-loading.js"></script>
   <script async src="./assets/js/global/nav.js"></script>
   <script async src="./assets/js/global/modal-video.js"></script>
+  <script async src="./assets/js/global/links.js"></script>
 
   <!-- JS locais -->
-  <script async src="./assets/js/pages/index/links.js"></script>
   <script async src="./assets/js/pages/index/modal-abrir.js"></script>
-
 
 </body>
 </html>
