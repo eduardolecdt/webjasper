@@ -1,4 +1,14 @@
-// Block Drag Drop
+// Drag Drop
 
-document.addEventListener('dragstart', (evento) => evento.preventDefault(), false)
-document.addEventListener('drop', (evento) => evento.preventDefault(), false)
+(function () {
+
+  // variaveis
+  function executarDragDrop() {
+    document.addEventListener('dragstart', (evento) => evento.preventDefault(), false)
+    document.addEventListener('drop', (evento) => evento.preventDefault(), false)
+  }
+
+  // iniciar
+  executarDragDrop()
+
+}())

@@ -1,0 +1,74 @@
+/*
+
+global AVISO COOKIE
+
+*/
+
+div.cookie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  z-index: 20;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  border-radius: 25px 0px 25px 0px;
+  box-shadow: 10px 10px 30px 0px rgb(0, 0, 0, 0.3);
+}
+
+div.cookie p {
+  font-family: var(--fonte-medium);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--cor-branco);
+  padding-right: 20px;
+}
+
+div.cookie button {
+  font-family: var(--fonte-medium);
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--cor-preto);
+  background-color: var(--cor-branco);
+  border: 2px solid var(--cor-branco);
+}
+
+div.cookie button:hover {
+  border: 2px solid var(--cor-branco);
+  color: var(--cor-branco);
+  background-color: transparent;
+}
+
+div.cookie.ocultar {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 800px) {
+  div.cookie {
+    bottom: 20px;
+    left: 20px;
+    z-index: 20;
+    width: calc(100% - 40px);
+  }
+  div.cookie p {
+    font-size: 0.8rem;
+    padding-right: 15px;
+  }
+  div.cookie button {
+    font-size: 1.1rem;
+    padding: 5px 15px;
+  }
+}
