@@ -105,10 +105,10 @@ section.sobre.seis .imagem {
 
 @media screen and (max-width: 1000px) {
   section.sobre {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   section.sobre:nth-child(even) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   section.sobre .imagem {
     min-height: auto;

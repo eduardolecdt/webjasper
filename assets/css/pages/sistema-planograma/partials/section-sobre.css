@@ -101,14 +101,24 @@ section.sobre.seis .imagem {
   background-position: right bottom;
 }
 
+section.sobre.sete .imagem {
+  background-image: url('../../../../images/pages/global/background-numero-7.svg');
+  background-position: left bottom;
+}
+
+section.sobre.oito .imagem {
+  background-image: url('../../../../images/pages/global/background-numero-8.svg');
+  background-position: right bottom;
+}
+
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
   section.sobre {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   section.sobre:nth-child(even) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   section.sobre .imagem {
     min-height: auto;
