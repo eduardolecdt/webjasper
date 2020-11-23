@@ -1,3 +1,5 @@
+<?php
+
 if(isset($_POST['mensagem'])){
 
   $mensagem = '<html>
