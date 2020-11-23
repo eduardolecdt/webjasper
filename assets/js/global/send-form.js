@@ -16,7 +16,7 @@ function send_form(){
 
     http.onreadystatechange = function() {//Call a function when the state changes.
         if(http.readyState == 4 && http.status == 200) {
-            document.getElementById("contato_nome").text = "MENSAGEM ENVIADA COM SUCESSO!!!"
+            document.getElementById("send_return").innerHTML = "MENSAGEM ENVIADA COM SUCESSO!!!"
         }
     }
     http.send(postdata);
