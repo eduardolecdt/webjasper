@@ -1,0 +1,99 @@
+/*
+
+global VIDEO
+
+*/
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* icones */
+
+.video img.icone {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.video.reproduzindo img.pause {
+  animation: fadeIn 1.5s;
+  z-index: 2;
+}
+
+.video.pausado img.play {
+  animation: fadeIn 1.5s;
+  z-index: 2;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 1;visibility: visible;}
+  100% {opacity: 0;visibility: hidden;}
+}
+
+/* Video */
+
+video::-webkit-media-controls,
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-current-time-display {
+  display: none;
+}
+
+.video video {
+  opacity: 1;
+}
+
+video {
+  width: 640px;
+  height: 360px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 800px) {
+  video {
+    width: 576px;
+    height: 324px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  video {
+    width: 512px;
+    height: 288px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  video {
+    width: 448px;
+    height: 252px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  video {
+    width: 384px;
+    height: 216px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  video {
+    width: 320px;
+    height: 180px;
+  }
+}

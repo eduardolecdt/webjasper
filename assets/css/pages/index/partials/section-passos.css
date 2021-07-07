@@ -1,0 +1,82 @@
+/*
+
+INDEX partials SECTION PASSOS
+
+*/
+
+section.passos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-cinza-1);
+  padding: 0px 50px;
+}
+
+section.passos .passo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  padding: 100px 0px 50px 0px;
+}
+
+section.passos .passo:nth-child(2) {
+  margin: 0px 50px;
+}
+
+section.passos .passo img {
+  width: auto;
+  height: 110px;
+  background-image: linear-gradient(to left, #eaeaf4, #ffffff);
+  padding: 25px 15px;
+  border-radius: 15px;
+  position: absolute;
+  top: -40px;
+  transform: rotate(10deg);
+}
+
+section.passos .passo p {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  color: var(--cor-cinza-3);
+  line-height: 1.5;
+  padding: 20px 0px 0px 0px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.passos {
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  section.passos .passo {
+    flex-direction: row;
+  }
+  section.passos .passo:nth-child(1) {
+    padding: 80px 0px 0px 0px;
+  }
+  section.passos .passo:nth-child(2) {
+    padding: 50px 0px 0px 0px;
+  }
+  section.passos .passo:nth-child(3) {
+    padding: 50px 0px 80px 0px;
+  }
+  section.passos .passo img {
+    position: unset;
+    height: 70px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    transform: rotate(-10deg);
+  }
+  section.passos .passo:nth-child(2) {
+    margin: 0px 0px;
+  }
+  section.passos .passo p {
+    font-size: 0.9rem;
+    padding: 0px 0px 0px 20px;
+  }
+}

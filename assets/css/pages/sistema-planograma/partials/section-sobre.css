@@ -1,0 +1,141 @@
+/*
+
+SISTEMA PLANOGRAMA partials SECTION SOBRE
+
+*/
+
+section.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background-color: var(--cor-branco);
+}
+
+section.sobre:nth-child(even) {
+  background-color: var(--cor-cinza-1);
+}
+
+/* titulo */
+
+section.sobre .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  min-height: 90vh;
+  padding: 100px;
+}
+
+section.sobre:nth-child(even) .titulo {
+  padding-left: 50px;
+}
+
+section.sobre .titulo h2 {
+  font-family: var(--fonte-extrabold);
+  font-size: 2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--cor-cinza-4);
+  width: 100%;
+  max-width: 500px;
+}
+
+section.sobre .titulo p {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--cor-cinza-3);
+  width: 100%;
+  max-width: 550px;
+  padding-top: 20px;
+}
+
+/* imagem */
+
+section.sobre .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 90vh;
+  margin-top: auto;
+}
+
+section.sobre .imagem img {
+  width: 100%;
+  max-width: 450px;
+}
+
+section.sobre.um .imagem {
+  background-image: url('../../../../images/pages/global/background-numero-1.svg');
+  background-position: left bottom;
+}
+
+section.sobre.dois .imagem {
+  background-image: url('../../../../images/pages/global/background-numero-2.svg');
+  background-position: right bottom;
+}
+
+section.sobre.tres .imagem {
+  background-image: url('../../../../images/pages/global/background-numero-3.svg');
+  background-position: left bottom;
+}
+
+section.sobre.quatro .imagem {
+  background-image: url('../../../../images/pages/global/background-numero-4.svg');
+  background-position: right bottom;
+}
+
+section.sobre.cinco .imagem {
+  background-image: url('../../../../images/pages/global/background-numero-5.svg');
+  background-position: left bottom;
+}
+
+section.sobre.seis .imagem {
+  background-image: url('../../../../images/pages/global/background-numero-6.svg');
+  background-position: right bottom;
+}
+
+section.sobre.sete .imagem {
+  background-image: url('../../../../images/pages/global/background-numero-7.svg');
+  background-position: left bottom;
+}
+
+section.sobre.oito .imagem {
+  background-image: url('../../../../images/pages/global/background-numero-8.svg');
+  background-position: right bottom;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.sobre {
+    flex-direction: column-reverse;
+  }
+  section.sobre:nth-child(even) {
+    flex-direction: column;
+  }
+  section.sobre .imagem {
+    min-height: auto;
+  }
+  section.sobre .titulo {
+    min-height: auto;
+    padding: 80px 30px 60px 30px;
+  }
+  section.sobre:nth-child(even) .titulo {
+    padding: 80px 30px 60px 30px;
+  }
+  section.sobre .titulo h2 {
+    font-size: 1.5rem;
+    max-width: 350px;
+  }
+  section.sobre .titulo p {
+    font-size: 0.9rem;
+    max-width: 450px;
+  }
+}

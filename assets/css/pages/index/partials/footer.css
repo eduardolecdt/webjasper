@@ -1,0 +1,91 @@
+/*
+
+INDEX partials FOOTER
+
+*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-cinza-4);
+  padding: 30px;
+}
+
+footer .texto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+footer .texto p {
+  font-family: var(--fonte-medium);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--cor-cinza-1);
+}
+
+footer .texto button {
+  font-family: var(--fonte-medium);
+  font-size: 0.9rem;
+  padding-top: 10px;
+  color: var(--cor-cinza-2);
+  background-color: transparent;
+}
+
+footer .texto button:hover {
+  color: var(--cor-cinza-1);
+}
+
+footer img.logotipo {
+  width: 200px;
+}
+
+/* Responsivo */
+
+footer .modal textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-height: 300px;
+  min-height: 300px;
+  height: 300px;
+  overflow-y: scroll;
+  width: 100%;
+  max-width: 700px;
+  font-family: var(--fonte-medium);
+  font-size: 0.9rem;
+  color: var(--cor-branco);
+  padding-right: 20px;
+  background-color: transparent;
+  line-height: 1.5;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  footer img.logotipo {
+    margin-top: 30px;
+    width: 170px;
+  }
+  footer .texto p {
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+    max-width: 250px;
+  }
+  footer .texto a {
+    font-size: 0.8rem;
+  }
+
+  footer .modal textarea {
+    width: calc(100% - 40px);
+  }
+}

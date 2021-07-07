@@ -1,0 +1,21 @@
+/*
+
+FONTES
+
+*/
+
+@font-face {
+  font-family: 'clarika_extrabold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../fonts/clarika-extrabold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'poppins_medium';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../fonts/poppins-medium.woff') format('woff');
+}

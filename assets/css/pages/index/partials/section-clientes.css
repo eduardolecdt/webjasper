@@ -1,0 +1,100 @@
+/*
+
+INDEX partials SECTION CLIENTES
+
+*/
+
+section.clientes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-branco);
+  padding: 50px;
+}
+
+/* Titulo */
+
+section.clientes .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding-right: 50px;
+}
+
+section.clientes .titulo h2 {
+  font-family: var(--fonte-extrabold);
+  font-size: 1.2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--cor-cinza-4);
+  width: 100%;
+  max-width: 400px;
+}
+
+section.clientes .titulo h3 {
+  font-family: var(--fonte-extrabold);
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--cor-primaria-2);
+}
+
+section.clientes .titulo p {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--cor-cinza-3);
+  width: 100%;
+  max-width: 400px;
+  padding-top: 15px;
+}
+
+/* Slide */
+
+section.clientes .imagem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+section.clientes .imagem img {
+  width: 100px;
+  margin-left: 80px;
+  opacity: 0.6;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.clientes {
+    flex-direction: column;
+    padding: 70px 30px;
+  }
+  section.clientes .titulo {
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 40px;
+  }
+  section.clientes .titulo h2 {
+    font-size: 1rem;
+  }
+  section.clientes .titulo h3 {
+    font-size: 2.5rem;
+  }
+  section.clientes .titulo p {
+    font-size: 0.9rem;
+  }
+  section.clientes .imagem {
+    align-items: center;
+    justify-content: center;
+  }
+  section.clientes .imagem img {
+    width: 80px;
+    margin: 0px 15px;
+  }
+}

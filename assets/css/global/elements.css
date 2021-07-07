@@ -1,0 +1,61 @@
+/*
+
+global ELEMENTS
+
+*/
+
+input {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  color: var(--cor-primaria-1);
+  padding: 15px 20px;
+  background-color: var(--cor-cinza-1);
+  box-shadow: 10px 10px 30px 0px rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--cor-cinza-3);
+}
+
+input:focus {
+  color: var(--cor-cinza-4);
+  background-color: var(--cor-branco);
+}
+
+textarea.formulario {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  color: var(--cor-primaria-1);
+  padding: 15px 20px;
+  background-color: var(--cor-cinza-1);
+  box-shadow: 10px 10px 30px 0px rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  resize: none;
+}
+
+textarea.formulario[name=foo] {
+  resize: none;
+}
+
+textarea.formulario::placeholder {
+  color: var(--cor-cinza-3);
+}
+
+textarea.formulario:focus {
+  color: var(--cor-cinza-4);
+  background-color: var(--cor-branco);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  input {
+    font-size: 0.9rem;
+  }
+  textarea {
+    font-size: 0.9rem;
+  }
+}
